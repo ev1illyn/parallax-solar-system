@@ -1,1 +1,1 @@
-# parallax-universe
+# parallax-solar-system
