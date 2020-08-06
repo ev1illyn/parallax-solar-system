@@ -1,0 +1,53 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+.container {
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+	background: url(../img/background/background.png);
+	background-attachment: fixed;
+}
+.mixBlnd {
+	background-blend-mode: screen;
+}
+#title {
+	color: white;
+}
+#star1, #start2, #start3 {
+	position: relative;
+	top: -50px;
+	top: 0px;
+}
+#sun, #mercury, #venus, #earth, #mars, #jupiter, #saturn, #uranus, #neptune {
+	position: relative;
+}
+/*
+#sun {
+	z-index: 0;
+}
+#mercury {
+	z-index: -10;
+}
+#venus {
+	z-index: -9;
+}
+#earth {
+	z-index: -8;
+}
+#mars {
+	z-index: -7;
+}
+#jupiter {
+	z-index: -6;
+}
+#saturn {
+	z-index: -5;
+}
+#uranus {
+	z-index: -4;
+}
+#neptune {
+	z-index: -3;
+}*/

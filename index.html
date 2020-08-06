@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Welcome to the solar system</title>
+	<link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/2.1.3/parallax.min.js"></script>
+</head>
+<body>
+	<div class="container">
+		<ul data-relative-input="true" id="scene">
+
+			<li class="layer" data-depth="-0.02" onclick="event()"><img src="img/stars/stars1.png" id="star1"></li>
+			<li class="layer" data-depth="0.02" onclick="event()"><img src="img/stars/stars2.png" id="star2"></li>
+			<li class="layer" data-depth="-0.01" onclick="event()"><img src="img/stars/stars3.png" id="star3"></li>
+
+			<li class="layer sun" data-depth="-0.05" onclick="event()"><img src="img/stars/sun.png" id="sun"></li>
+			<li class="layer mercury" data-depth="0.13" onclick="event()"><img src="img/planets-ring/mercury.png" id="mercury"></li>
+			<li class="layer venus" data-depth="-0.12" onclick="event()"><img src="img/planets-ring/venus.png" id="venus"></li>
+			<li class="layer earth" data-depth="0.1" onclick="event()"><img src="img/planets-ring/earth.png" id="earth"></li>
+			<li class="layer moon" data-depth="-0.09" onclick="event()"><img src="img/planets-ring/moon.png" id="moon"></li>
+			<li class="layer mars" data-depth="0.07" onclick="event()"><img src="img/planets-ring/mars.png" id="mars"></li>
+			<li class="layer jupiter" data-depth="-0.06" onclick="event()"><img src="img/planets-ring/jupiter.png" id="jupiter"></li>
+			<li class="layer saturn" data-depth="0.06" onclick="event()"><img src="img/planets-ring/saturn.png" id="saturn"></li>
+			<li class="layer uranus" data-depth="-0.04" onclick="event()"><img src="img/planets-ring/uranus.png" id="uranus"></li>
+			<li class="layer neptune" data-depth="0.03" onclick="event()"><img src="img/planets-ring/neptune.png" id="neptune"></li>
+			
+		</ul>
+	</div>
+	<script>
+		var scene = document.getElementById('scene');
+		var parallax = new Parallax(scene);
+		
+        $('img').click(function() {
+            alert($(this).attr('id'));
+        });
+    </script>
+</body>
+</html>
